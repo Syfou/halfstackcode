@@ -1,0 +1,33 @@
+{
+  "type": "origins:modify_damage_dealt",
+  "hidden": true,
+  "modifier": {
+    "operation": "multiply_base",
+    "value": -1
+  },
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:empty",
+          "inverted": true
+        }
+      },
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "offhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "inverted": true,
+          "ingredient": {
+            "item": "halfstackorigins:loong_pearl"
+          }
+        }
+      }
+      ]
+  }
+}
+

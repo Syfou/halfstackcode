@@ -1,0 +1,21 @@
+{
+  "type": "origins:attribute",
+  "modifiers": [
+    {
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -10
+    },
+    {
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_base",
+      "value": 0.1
+    },
+    {
+      "attribute": "minecraft:generic.flying_speed",
+      "operation": "multiply_base",
+      "value": 0.25
+    }
+    ],
+  "hidden": true
+  }

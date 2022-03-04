@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "halfstackorigins:extreme_knockback",
+    "halfstackorigins:loong_health",
+    "halfstackorigins:punch_only",
+    "halfstackorigins:loong_armor",
+    "halfstackorigins:loong_pearl_spawn",
+    "halfstackorigins:slow_fall",
+    "halfstackorigins:no_ranged"
+  ],
+  "icon": "minecraft:ender_eye",
+  "order": 4,
+  "impact": 3,
+  "name": "Loong",
+  "description": "Water/air spirits, also referred to as eastern dragons. A high mobility build that discourages direct combat and is suited for exploring/caving."
+}

@@ -1,0 +1,11 @@
+{
+  "type": "origins:starting_equipment",
+  "name": "DRAGON’S PEARL",
+  "description": "The pearl placed in your offhand will carry you through the sea and sky better than any trident, but only when placed in yours or any Loong’s offhand, and it will vanish to return to you after death. You will fall slowly.",
+  "stack": {
+    "item": "halfstackorigins:loong_pearl",
+    "slot": 40,
+    "tag": "{Enchantments:[{id:vanishing_curse,lvl:1}]}"
+  },
+  "recurrent": true
+}

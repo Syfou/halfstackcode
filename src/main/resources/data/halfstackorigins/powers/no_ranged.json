@@ -1,0 +1,30 @@
+{
+  "type": "origins:prevent_item_use",
+  "name": "L(oong) moment",
+  "hidden": true,
+  "item_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:bow"
+        }
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:crossbow"
+        }
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:trident"
+        }
+      }
+    ]
+  }
+}
+
+

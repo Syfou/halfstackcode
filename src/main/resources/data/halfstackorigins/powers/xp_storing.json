@@ -1,0 +1,50 @@
+{
+  "type": "origins:active_self",
+  "key": "key.use",
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "item": "minecraft:glass_bottle"
+          }
+        }
+      },
+      {
+        "type": "origins:xp_points",
+        "comparison": ">",
+        "compare_to": 15
+      }
+    ]
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "/experience add @s -16 points"
+      },
+      {
+        "type": "origins:give",
+        "stack": {
+          "item": "halfstackorigins:fairy_floss",
+          "amount": 1
+        }
+      },
+      {
+        "type": "origins:equipped_item_action",
+        "equipment_slot": "mainhand",
+        "action": {
+          "type": "origins:consume",
+          "amount": 1
+        }
+      }
+    ]
+  },
+  "name": "ENCHANTED",
+  "description": "Right clicking an empty bottle will turn it into an enchantment bottle at equal cost to your XP."
+}

@@ -1,0 +1,9 @@
+{
+  "powers": [
+    "halfstackorigins:not_loong"
+  ],
+  "icon": "minecraft:diamond",
+  "order": 4,
+  "impact": 3,
+  "name": "Person"
+}

@@ -1,0 +1,46 @@
+{
+  "hidden": true,
+  "name": "Limited Armor",
+  "type": "origins:restrict_armor",
+  "head": {
+    "inverted": true,
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:turtle_helmet"
+        }
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:golden_helmet"
+        }
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:pumpkin"
+        }
+      }
+    ]
+  },
+  "chest": {
+    "type": "origins:armor_value",
+    "comparison": ">",
+    "compare_to": 0
+  },
+  "legs": {
+    "type": "origins:armor_value",
+    "comparison": ">",
+    "compare_to": 0
+  },
+  "feet": {
+    "inverted": true,
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:leather_boots"
+    }
+  }
+}

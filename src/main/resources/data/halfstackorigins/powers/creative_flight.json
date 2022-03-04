@@ -1,0 +1,31 @@
+{
+  "type": "origins:creative_flight",
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "offhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "item": "minecraft:shield"
+          }
+        }
+      },
+      {
+        "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:shield"
+        }
+      }
+      }
+    ],
+    "inverted": true
+  },
+  "name": "FLIGHT OF THE BUMBLEBEES",
+  "description": "You hover slowly. You cannot wear chestplates or armor stronger than gold, and you cannot hover while equipping a shield."
+}

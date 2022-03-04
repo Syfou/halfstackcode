@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "halfstackorigins",
+  "version": "${version}",
+  "name": "Halfstackorigins",
+  "description": "",
+  "authors": [
+    "Syfou"
+  ],
+  "contact": {},
+  "license": "MIT License",
+  "icon": "assets/halfstackorigins/icon.jpeg",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.syfou.halfstackorigins.client.HalfstackoriginsClient"
+    ],
+    "main": [
+      "com.syfou.halfstackorigins.Halfstackorigins"
+    ]
+  },
+  "mixins": [
+    "halfstackorigins.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
