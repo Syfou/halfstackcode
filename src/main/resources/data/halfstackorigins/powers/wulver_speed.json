@@ -1,0 +1,11 @@
+{
+  "name": "SWIFT",
+  "description": "Your walk speed is a normal player’s sprint. Attempting to really sprint will hurt you- you’re a marathon runner, not a speedrunner!",
+  "type": "origins:attribute",
+  "modifier":
+    {
+      "attribute": "minecraft:generic.movement_speed",
+      "value": 0.733,
+      "operation": "multiply_total"
+    }
+}

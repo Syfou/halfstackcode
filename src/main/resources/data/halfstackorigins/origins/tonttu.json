@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "halfstackorigins:climbing",
+    "origins:fall_immunity",
+    "halfstackorigins:tonttu_size",
+    "halfstackorigins:drowns_faster",
+    "halfstackorigins:5_hearts",
+    "halfstackorigins:tonttu_diet",
+    "halfstackorigins:ride_over_half",
+    "halfstackorigins:ride_chickens",
+    "halfstackorigins:shorter_than_2",
+    "halfstackorigins:no_cake",
+    "halfstackorigins:climbing_desc",
+    "halfstackorigins:rides_ravagers"
+  ],
+  "icon": "minecraft:red_wool",
+  "name": "Tonttu",
+  "description": "A small, speedy, flightless creature. Suited for caving and surprisingly useful for combat."
+}

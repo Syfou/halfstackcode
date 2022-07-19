@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:golden_carrot",
+    "minecraft:carrot",
+    "minecraft:beetroot",
+    "minecraft:potato",
+    "minecraft:poisonous_potato",
+    "minecraft:hanging_roots",
+    "minecraft:beetroot_soup",
+    "minecraft:crimson_roots",
+    "minecraft:warped_roots",
+    "minecraft:bamboo",
+    "minecraft:golden_carrot",
+    "minecraft:mangrove_propagule"
+  ]
+}

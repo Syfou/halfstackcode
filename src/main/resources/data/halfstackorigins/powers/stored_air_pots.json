@@ -1,0 +1,15 @@
+{
+  "type": "origins:action_on_item_use",
+  "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:potion"
+        }
+  },
+  "entity_action": {
+    "type": "origins:gain_air",
+    "value": 80
+  },
+  "name": "MAN-EATER",
+  "description": "You can only eat dry kelp, meat, rotten flesh, eggs, or sugar. Uncooked meat is more effective."
+}

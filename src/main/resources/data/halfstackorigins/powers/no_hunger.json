@@ -1,0 +1,8 @@
+{
+  "type": "origins:modify_status_effect_amplifier",
+  "status_effect": "minecraft:hunger",
+  "modifier": {
+    "operation": "multiply_base",
+    "value": 0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "origins:target_action_on_hit",
+  "name": "AVOIDANT",
+  "description": "Your attacks are unable to to cause damage, but they do cause 6 block knockback. You still have use of weapons, armor, and all their enchantments. Do with that what you will.",
+  "cooldown": 1,
+  "entity_action": {
+    "type": "origins:add_velocity",
+    "z": 1.2,
+    "space": "velocity_horizontal_normalized"
+  }
+}

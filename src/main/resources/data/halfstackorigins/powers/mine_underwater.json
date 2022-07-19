@@ -1,0 +1,12 @@
+{
+  "type": "origins:modify_break_speed",
+  "condition": {
+    "type": "origins:submerged_in",
+    "fluid": "minecraft:water"
+  },
+  "modifier": {
+    "operation": "multiply_total",
+    "value": 4
+  },
+  "hidden": true
+}

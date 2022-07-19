@@ -2,8 +2,13 @@
   "replace": true,
   "origins": [
     "halfstackorigins:loong",
-    "halfstackorigins:person",
-    "halfstackorigins:fairy"
+    "halfstackorigins:tonttu",
+    "halfstackorigins:fairy",
+    "halfstackorigins:human",
+    "halfstackorigins:karkinos",
+    "halfstackorigins:wulver",
+    "halfstackorigins:kelpie",
+    "halfstackorigins:qilin"
   ],
   "name": "fighter"
 }

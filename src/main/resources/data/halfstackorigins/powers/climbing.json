@@ -1,0 +1,7 @@
+{
+  "type": "origins:climbing",
+  "condition": {
+    "type": "origins:collided_horizontally"
+  },
+  "hidden": true
+}

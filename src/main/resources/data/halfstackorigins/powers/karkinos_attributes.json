@@ -1,0 +1,19 @@
+{
+  "type": "origins:attribute",
+  "name": "SCUTTLER",
+  "description": "You have a constant speed effect and can climb slowly.",
+  "modifiers": [
+    {
+    "name": "Max health increase",
+    "attribute": "minecraft:generic.armor",
+    "value": 15,
+    "operation": "addition"
+    },
+    {
+      "name": "Max health increase",
+      "attribute": "minecraft:generic.movement_speed",
+      "value": 0.5,
+      "operation": "multiply_total"
+    }
+    ]
+}

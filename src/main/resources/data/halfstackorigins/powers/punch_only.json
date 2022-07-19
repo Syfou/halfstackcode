@@ -15,19 +15,8 @@
           "type": "origins:empty",
           "inverted": true
         }
-      },
-      {
-        "type": "origins:equipped_item",
-        "equipment_slot": "offhand",
-        "item_condition": {
-          "type": "origins:ingredient",
-          "inverted": true,
-          "ingredient": {
-            "item": "halfstackorigins:loong_pearl"
-          }
-        }
       }
-      ]
+    ]
   }
 }
 

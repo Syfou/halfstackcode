@@ -1,12 +1,9 @@
 {
   "type": "origins:prevent_item_use",
-  "hidden": true,
   "item_condition": {
     "type": "origins:ingredient",
     "ingredient": {
-      "item": "halfstackorigins:loong_pearl"
+      "tag": "minecraft:flowers"
     }
-  },
-  "held_item_action": "origins:consume",
-  "amount": 1
+  }
 }

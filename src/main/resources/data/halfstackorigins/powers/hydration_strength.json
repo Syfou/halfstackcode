@@ -1,0 +1,14 @@
+{
+  "type": "origins:conditioned_attribute",
+  "condition": {
+    "type": "origins:air",
+    "comparison": ">=",
+    "compare_to": 150
+  },
+  "modifier": {
+    "attribute": "minecraft:generic.attack_damage",
+    "operation": "addition",
+    "value": 3
+    },
+  "hidden": true
+}

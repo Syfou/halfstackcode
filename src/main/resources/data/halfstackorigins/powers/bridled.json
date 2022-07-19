@@ -1,0 +1,82 @@
+{
+  "name": "BRIDLED",
+  "description": "Other players can ride you if you wear a helmet, but they cannot dismount unless you crouch or one day cycle passes. If you are wearing golden armor, players can mount/dismount at will",
+  "type": "origins:action_on_being_used",
+  "bientity_condition": {
+    "type": "origins:target_condition",
+      "condition":{
+      "type": "origins:equipped_item",
+      "equipment_slot": "head",
+      "item_condition": {
+        "type": "origins:empty",
+        "inverted": true
+      }
+    }
+  },
+  "bientity_action": {
+    "type": "origins:and",
+    "actions": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:mount"
+        },
+        {
+          "type": "origins:actor_action",
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:change_resource",
+                "resource": "kelpie_cooldown",
+                "change": 200,
+                "operation": "set"
+              },
+              {
+                "type": "origins:grant_power",
+                "power": "halfstackorigins:kelpie_cooldown",
+                "source": "halfstackorigins:kelpies_curse"
+              },
+              {
+                "type": "origins:trigger_cooldown",
+                "power": "halfstackorigins:kelpie_cooldown"
+              },
+              {
+                "type": "origins:grant_power",
+                "power": "halfstackorigins:on_kelpie",
+                "source": "halfstackorigins:kelpies_curse"
+              }
+            ]
+          }
+        },
+        {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:grant_power",
+                "power": "halfstackorigins:kelpie_ridden",
+                "source": "halfstackorigins:kelpies_curse"
+              },
+              {
+                "type": "origins:grant_power",
+                "power": "halfstackorigins:undismountable",
+                "source": "halfstackorigins:kelpies_curse"
+              },
+              {
+                "type": "origins:grant_power",
+                "power": "halfstackorigins:kelpie_cooldown",
+                "source": "halfstackorigins:kelpies_curse"
+              },
+              {
+                "type": "origins:trigger_cooldown",
+                "power": "halfstackorigins:kelpie_cooldown"
+              }
+              ]
+          }
+        }
+      ]
+    }
+  }
+}

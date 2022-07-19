@@ -1,0 +1,35 @@
+{
+  "type": "origins:action_over_time",
+  "interval": "10",
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:riding",
+      "inverted": true
+    },
+    "if_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "kelpie_cooldown",
+          "change": 0,
+          "operation": "set"
+        },
+        {
+          "type": "origins:revoke_power",
+          "power":"halfstackorigins:kelpie_cooldown",
+          "source": "halfstackorigins:kelpies_curse"
+        },
+        {
+          "type": "origins:revoke_power",
+          "power": "halfstackorigins:on_kelpie",
+          "source": "halfstackorigins:kelpies_curse"
+        }
+      ]
+    },
+    "else_action": {
+      "type": "origins:nothing"
+    }
+  }
+}

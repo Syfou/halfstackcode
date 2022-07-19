@@ -47,6 +47,6 @@ public class fairyflossentity extends ExperienceBottleEntity{
     }
     @Override
     public Packet createSpawnPacket() {
-        return EntitySpawnPacket.create(this, HalfstackoriginsClient.PacketID);
+        return EntitySpawnPacket.create(this, Halfstackorigins.PacketID);
     }
 }

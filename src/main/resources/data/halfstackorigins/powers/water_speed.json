@@ -1,0 +1,14 @@
+{
+  "type": "origins:conditioned_attribute",
+  "modifier": {
+    "attribute": "minecraft:generic.movement_speed",
+    "operation": "addition",
+    "value": 20
+  },
+  "tick_rate": 20,
+  "condition": {
+    "type": "origins:submerged_in",
+    "fluid": "minecraft:water"
+  },
+  "hidden": true
+}

@@ -1,0 +1,44 @@
+{
+  "type": "origins:prevent_item_use",
+  "name": "MAN-EATER",
+  "description": "You can only eat dry kelp, meat, rotten flesh, eggs, or sugar. Uncooked meat is more effective.",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:realfood"
+        }
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:alwayseat"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:meat"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:rotten_flesh"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:sugar"
+        },
+        "inverted": true
+      }
+    ]
+  }
+}

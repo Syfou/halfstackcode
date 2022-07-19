@@ -1,0 +1,7 @@
+{
+  "type": "origins:prevent_block_use",
+  "block_condition": {
+    "type": "origins:in_tag",
+    "tag": "halfstackorigins:rideables"
+  }
+}

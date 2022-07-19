@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "minecraft:crimson_fungus",
+    "minecraft:warped_fungus",
+    "minecraft:glow_lichen",
+    "minecraft:mushroom_stew",
+    "minecraft:suspicious_stew"
+  ]
+}

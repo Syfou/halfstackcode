@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.11-SNAPSHOT'
+    id 'fabric-loom' version '0.12-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -41,11 +41,17 @@ dependencies {
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
+
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
+
     modImplementation("com.github.virtuoel:pehkui:${pehkui_version}") {
         exclude(group: "net.fabricmc.fabric-api")
     }
+    modImplementation "com.github.MerchantPug:apugli:${project.apugli_version}"
+    include "com.github.MerchantPug:apugli:${project.apugli_version}"
+
 }
 
 processResources {

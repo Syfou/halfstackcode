@@ -1,88 +1,65 @@
 {
+  "name": "SWEET TOOTH",
+  "description": "You eat flowers, fruit, mushrooms, moss, and pie. Eating chocolate will give you both speed and nausea.",
   "type": "origins:prevent_item_use",
   "item_condition": {
     "type": "origins:and",
     "conditions": [
       {
-        "type": "origins:food"
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:realfood"
+        }
       },
       {
-        "type": "origins:and",
-        "conditions": [
-          {
-            "type": "origins:ingredient",
-            "ingredient": {
-              "item": "minecraft:honey_bottle"
-            },
-            "inverted": true
-          },
-          {
-            "type": "origins:ingredient",
-            "ingredient": {
-              "item": "minecraft:apple"
-            },
-            "inverted": true
-          },
-          {
-            "type": "origins:ingredient",
-            "ingredient": {
-              "item": "minecraft:pumpkin_pie"
-            },
-            "inverted": true
-          },
-          {
-            "type": "origins:ingredient",
-            "ingredient": {
-              "item": "minecraft:melon"
-            },
-            "inverted": true
-          },
-          {
-            "type": "origins:ingredient",
-            "ingredient": {
-              "item": "minecraft:sweet_berries"
-            },
-            "inverted": true
-          },
-          {
-            "type": "origins:ingredient",
-            "ingredient": {
-              "item": "minecraft:glow_berries"
-            },
-            "inverted": true
-          },
-          {
-            "type": "origins:ingredient",
-            "ingredient": {
-              "item": "minecraft:chorus_fruit"
-            },
-            "inverted": true
-          },
-          {
-            "type": "origins:ingredient",
-            "ingredient": {
-              "item": "minecraft:golden_apple"
-            },
-            "inverted": true
-          },
-          {
-            "type": "origins:ingredient",
-            "ingredient": {
-              "item": "minecraft:cookie"
-            },
-            "inverted": true
-          },
-          {
-            "type": "origins:ingredient",
-            "ingredient": {
-              "item": "minecraft:mushroom_stew"
-            },
-            "inverted": true
-          }
-        ]
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:alwayseat"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:flowers"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:fruit"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:mushrooms"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:moss_block"
+        },
+        "inverted": true
+      },{
+
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:pumpkin_pie"
+      },
+      "inverted": true
+      },
+      {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:cocoa_beans"
+      },
+      "inverted": true
       }
     ]
-  },
-  "name": "Weak Stomach",
-  "hidden": true
+  }
 }
