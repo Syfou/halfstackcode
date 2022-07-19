@@ -1,16 +1,4 @@
 {
-  "type": "origins:damage_over_time",
-  "name": "UNHYDRATED",
-  "description": ": Your body isn't hydrated enough to sprint.",
-  "interval": 10,
-  "damage": 2,
-  "damage_source": {
-    "name": "dryout",
-    "bypasses_armor": true,
-    "unblockable": "true"
-  },
-  "condition": {
-    "type": "origins:sprinting"
-  },
+  "type": "origins:simple",
   "hidden": true
 }

@@ -1,19 +1,25 @@
 {
+  "hidden": true,
   "type": "origins:action_on_item_use",
   "entity_action": {
-      "type": "origins:apply_effect",
-      "effects": [
-        {
+    "type": "origins:apply_effect",
+    "effects": [
+      {
         "effect": "minecraft:speed",
-        "duration": 400,
-        "amplifier": 2
-    },
-        {
-          "effect": "minecraft:nausea",
-          "duration": 400,
-          "amplifier": 3
-        }
-        ]
+        "duration": 300,
+        "amplifier": 1
+      },
+      {
+        "effect": "minecraft:nausea",
+        "duration": 300,
+        "amplifier": 3
+      }
+    ]
   },
-  "hidden": true
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:cocoa_beans"
+    }
+  }
 }

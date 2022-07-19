@@ -6,7 +6,9 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityRendererRegistry;
+//import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.network.ClientSidePacketRegistry;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.entity.Entity;
@@ -17,10 +19,11 @@ import net.minecraft.util.registry.Registry;
 
 import java.util.UUID;
 
+import static com.syfou.halfstackorigins.Halfstackorigins.PacketID;
+
 @Environment(EnvType.CLIENT)
 public class HalfstackoriginsClient implements ClientModInitializer {
     public static final String MOD_ID = "Halfstackorigins";
-    public static final Identifier PacketID = new Identifier(Halfstackorigins.MOD_ID, "spawn_packet");
 
     public void receiveEntityPacket() {
         ClientSidePacketRegistry.INSTANCE.register(PacketID, (ctx, byteBuf) -> {
@@ -36,7 +39,7 @@ public class HalfstackoriginsClient implements ClientModInitializer {
                 Entity e = et.create(MinecraftClient.getInstance().world);
                 if (e == null)
                     throw new IllegalStateException("Failed to create instance of entity \"" + Registry.ENTITY_TYPE.getId(et) + "\"!");
-                e.updateTrackedPosition(pos);
+                e.updateTrackedPosition(pos.x, pos.y, pos.z);
                 e.setPos(pos.x, pos.y, pos.z);
                 e.setPitch(pitch);
                 e.setYaw(yaw);

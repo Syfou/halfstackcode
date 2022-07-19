@@ -2,11 +2,14 @@
   "powers": [
     "halfstackorigins:extreme_knockback",
     "halfstackorigins:loong_health",
-    "halfstackorigins:punch_only",
+    "halfstackorigins:punch_only_loong",
     "halfstackorigins:loong_armor",
     "halfstackorigins:loong_pearl_spawn",
     "halfstackorigins:slow_fall",
-    "halfstackorigins:no_ranged"
+    "halfstackorigins:no_ranged",
+    "halfstackorigins:prevent_elytra",
+    "halfstackorigins:rides_ravagers",
+    "halfstackorigins:loong_diet"
   ],
   "icon": "minecraft:ender_eye",
   "order": 4,

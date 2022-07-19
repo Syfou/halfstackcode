@@ -4,8 +4,35 @@
   "package": "com.syfou.halfstackorigins.mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "BucketItemMixin",
+    "ClayMixin",
+    "EggMixin",
+    "EntityBucketItemMixin",
+    "FoodMixin",
+    "ItemMixin",
+    "KelpieBreathingMixin$CanBreatheInWater",
+    "KelpieBreathingMixin$UpdateAir",
+    "MilkMixin",
+    "RidingMixin",
+    "ScareHorsesMixin",
+    "SpecEatMixin$ArmorEating",
+    "SpecEatMixin$BottleEating",
+    "SpecEatMixin$BowEating",
+    "SpecEatMixin$CrossbowEating",
+    "SpecEatMixin$ElytraEating",
+    "SpecEatMixin$EyeEating",
+    "SpecEatMixin$GlassEating",
+    "SpecEatMixin$HornEating",
+    "SpecEatMixin$PearlEating",
+    "SpecEatMixin$RocketEating",
+    "SpecEatMixin$ShieldEating",
+    "SpecEatMixin$TridentEating",
+    "SpecEatMixin$XPBottleEating"
   ],
   "client": [
+    "NoBoatEntryMixin",
+    "NoSneakMixin",
+    "NoSprintMixin"
   ],
   "injectors": {
     "defaultRequire": 1

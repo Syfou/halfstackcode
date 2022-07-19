@@ -4,6 +4,9 @@ package com.syfou.halfstackorigins;
 import com.syfou.halfstackorigins.entities.fairyflossentity;
 import com.syfou.halfstackorigins.items.fairy_floss;
 import com.syfou.halfstackorigins.items.loong_pearl;
+import io.github.apace100.origins.Origins;
+import me.shedaniel.autoconfig.ConfigData;
+import me.shedaniel.autoconfig.annotation.Config;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
@@ -19,6 +22,8 @@ import org.slf4j.LoggerFactory;
 
 public class Halfstackorigins implements ModInitializer {
     public static final String MOD_ID = "halfstackorigins";
+
+    public static final Identifier PacketID = new Identifier(Halfstackorigins.MOD_ID, "spawn_packet");
 
 
     public static final Item LOONG_PEARL = new loong_pearl(new FabricItemSettings().group(ItemGroup.MISC));
@@ -41,5 +46,14 @@ public class Halfstackorigins implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("halfstackorigins", "loong_pearl"), LOONG_PEARL);
         Registry.register(Registry.ITEM, new Identifier("halfstackorigins", "fairy_floss"), FAIRY_FLOSS);
 
+    }
+    public static Identifier identifier(String path) {
+        return new Identifier(Origins.MODID, path);
+    }
+
+    @Config(name = Origins.MODID + "_server")
+    public static class ServerConfig implements ConfigData {
+
+        public boolean performVersionCheck = true;
     }
 }

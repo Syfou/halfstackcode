@@ -1,8 +1,6 @@
 {
   "type": "origins:attribute",
-  "name": "FARMER’S FEAST",
-  "description": "You can eat anything a normal player can, but due to your combat restrictions it would be easiest for you to forage, farm, or fish.",
-  "hidden": false,
+  "hidden": true,
   "modifier": {
     "name": "Loong health reduction",
     "attribute": "minecraft:generic.max_health",

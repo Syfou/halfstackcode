@@ -34,7 +34,7 @@
   "legs": {
     "type": "origins:armor_value",
     "comparison": ">",
-    "compare_to": 0
+    "compare_to": -1
   },
   "feet": {
     "inverted": true,

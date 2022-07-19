@@ -10,9 +10,6 @@
     "space": "velocity_horizontal_normalized"
   },
   "condition": {
-    "type": "origins:and",
-    "conditions": [
-      {
         "type": "origins:equipped_item",
         "equipment_slot": "mainhand",
         "item_condition": {
@@ -21,17 +18,5 @@
             "item": "minecraft:air"
           }
         }
-      },
-      {
-        "type": "origins:equipped_item",
-        "equipment_slot": "offhand",
-        "item_condition": {
-          "type": "origins:ingredient",
-          "ingredient": {
-            "item": "halfstackorigins:loong_pearl"
-          }
-        }
-      }
-    ]
   }
 }

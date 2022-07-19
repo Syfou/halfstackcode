@@ -26,7 +26,7 @@
     "actions": [
       {
         "type": "origins:execute_command",
-        "command": "/experience add @s -16 points"
+        "command": "experience add @s -16 points"
       },
       {
         "type": "origins:give",
