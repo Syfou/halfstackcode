@@ -1,0 +1,23 @@
+{
+  "powers": [
+    "halfstackorigins:climbing",
+    "halfstackorigins:half_block_size",
+    "halfstackorigins:no_riding",
+    "halfstackorigins:7_hearts",
+    "halfstackorigins:no_sneak",
+    "halfstackorigins:heavier_than_iron",
+    "halfstackorigins:ignore_water",
+    "halfstackorigins:karkinos_diet",
+    "halfstackorigins:no_cake",
+    "halfstackorigins:no_offhand",
+    "halfstackorigins:no_ranged",
+    "halfstackorigins:punch_only",
+    "halfstackorigins:karkinos_attributes",
+    "halfstackorigins:strong_punch",
+    "halfstackorigins:doesnt_drown",
+    "halfstackorigins:mine_underwater"
+  ],
+  "name": "Karkinos",
+  "icon": "minecraft:seagrass",
+  "description": "A semi-aquatic creature with a hardy shell and clumsy hands. Good for those that don’t prefer armor, or want aquatic exploration."
+}

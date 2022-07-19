@@ -1,0 +1,44 @@
+{
+  "type": "origins:prevent_item_use",
+  "name": "CARNIVORE",
+  "description": "You can eat any meat (including rotten flesh) as well as bones.",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:realfood"
+        }
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:alwayseat"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:meat"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:rotten_flesh"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:bone"
+        },
+        "inverted": true
+      }
+    ]
+  }
+}

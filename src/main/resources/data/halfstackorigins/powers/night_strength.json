@@ -1,0 +1,14 @@
+{
+  "type": "origins:conditioned_attribute",
+  "name": "NOCTURNAL",
+  "description": "You gain strength when it is night.",
+  "modifier": {
+    "attribute": "minecraft:generic.attack_damage",
+    "operation": "multiply_base",
+    "value": 2
+  },
+  "condition" : {
+    "type": "origins:daytime",
+    "inverted": true
+  }
+}

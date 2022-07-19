@@ -1,0 +1,15 @@
+{
+  "type": "origins:action_on_entity_use",
+  "name": "FRIENDLY",
+  "description": "Any untamed pet animal can be tamed by right clicking.",
+  "bientity_action": {
+    "type": "origins:tame"
+  },
+  "bientity_condition": {
+    "type": "origins:target_condition",
+    "condition": {
+      "type": "origins:tamed"
+    },
+    "inverted": true
+  }
+}

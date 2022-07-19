@@ -1,0 +1,28 @@
+{
+  "type": "origins:prevent_entity_use",
+  "bientity_condition": {
+    "type": "origins:target_condition",
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:horse"
+        },
+        {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:llama"
+        },
+        {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:mule"
+        },
+        {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:donkey"
+        }
+      ]
+    }
+  },
+  "hidden": true
+}

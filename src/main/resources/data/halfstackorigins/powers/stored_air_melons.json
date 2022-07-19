@@ -1,0 +1,15 @@
+{
+  "type": "origins:action_on_item_use",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:melon_slice"
+    }
+  },
+  "entity_action": {
+    "type": "origins:gain_air",
+    "value": 40
+  },
+  "name": "COLD IRON",
+  "description": "You cannot use iron or chain weapons/armor, and iron weapons poison you."
+}

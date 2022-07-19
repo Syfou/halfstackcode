@@ -1,0 +1,18 @@
+{
+  "name": "WATER HASTE",
+  "description": "You can break blocks and see underwater the way normal players can on land.",
+  "type": "origins:modify_break_speed",
+  "modifier": {
+    "operation": "multiply_total",
+    "value": 4
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+      }
+    ]
+  }
+}

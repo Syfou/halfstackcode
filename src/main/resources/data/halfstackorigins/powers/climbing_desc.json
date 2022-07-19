@@ -1,0 +1,5 @@
+{
+  "type": "origins:simple",
+  "name": "CLIMBER",
+  "description": "You can climb all solid surfaces and don’t take fall damage."
+}

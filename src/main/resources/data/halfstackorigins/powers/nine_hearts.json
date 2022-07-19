@@ -1,0 +1,10 @@
+{
+  "type": "origins:attribute",
+  "hidden": true,
+  "modifier": {
+    "name": "Qilin health reduction",
+    "attribute": "minecraft:generic.max_health",
+    "value": -2.0,
+    "operation": "addition"
+  }
+}

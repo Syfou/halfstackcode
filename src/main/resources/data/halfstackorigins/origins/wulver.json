@@ -1,0 +1,20 @@
+{
+  "powers": [
+    "halfstackorigins:15_to_25",
+    "halfstackorigins:wulver_diet",
+    "halfstackorigins:1_5_height",
+    "halfstackorigins:no_sprint",
+    "halfstackorigins:night_strength",
+    "halfstackorigins:no_iron_weapons",
+    "halfstackorigins:iron_poisons",
+    "halfstackorigins:insta_tame",
+    "halfstackorigins:heavier_than_gold",
+    "halfstackorigins:wulver_speed",
+    "halfstackorigins:rides_ravagers",
+    "halfstackorigins:rides_goats",
+    "halfstackorigins:wulver_jump"
+  ],
+  "icon": "minecraft:bone",
+  "name": "Wulver",
+  "description": "Lupine creatures with a friendly disposition. For players who make good use of pets."
+}

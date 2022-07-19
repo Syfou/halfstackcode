@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "halfstackorigins:1_5_height",
+    "origins:fall_immunity",
+    "halfstackorigins:qilin_jump",
+    "halfstackorigins:nine_hearts",
+    "halfstackorigins:qilin_knockback",
+    "halfstackorigins:qilin_diet",
+    "halfstackorigins:no_damage",
+    "halfstackorigins:no_ranged_damage"
+  ],
+  "name": "QILIN",
+  "description": "A peaceful, high-leaping equine. Like the Loong origin, suited for high mobility pacifist gameplay.",
+  "icon": "minecraft:wheat"
+}

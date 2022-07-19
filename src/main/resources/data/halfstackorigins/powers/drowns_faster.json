@@ -1,0 +1,25 @@
+{
+  "name": "SCARCE AIR",
+  "description": "You run out of air faster than normal players when in water.",
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "entity_action": {
+    "type": "origins:gain_air",
+    "value": -9
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+      },
+      {
+        "type": "origins:status_effect",
+        "effect": "minecraft:water_breathing",
+        "min_amplifier": 1,
+        "inverted": true
+      }
+    ]
+  }
+}

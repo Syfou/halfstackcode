@@ -1,0 +1,26 @@
+{
+  "powers": [
+    "halfstackorigins:kelpie_breathing",
+    "halfstackorigins:3_block_height",
+    "halfstackorigins:raw_gain",
+    "halfstackorigins:dont_cook",
+    "halfstackorigins:stored_air_pots",
+    "halfstackorigins:stored_air_melons",
+    "halfstackorigins:water_vision",
+    "halfstackorigins:water_break",
+    "halfstackorigins:iron_poisons",
+    "halfstackorigins:no_iron_weapons",
+    "halfstackorigins:no_iron_armor",
+    "halfstackorigins:horse_fear",
+    "halfstackorigins:no_riding",
+    "halfstackorigins:bridled",
+    "halfstackorigins:hydration_strength",
+    "halfstackorigins:water_speed",
+    "halfstackorigins:eats_eggs",
+    "halfstackorigins:kelpie_diet"
+  ],
+  "name": "KELPIE",
+  "description": "An aquatic shapeshifter that often appears as a horse. A strong hitting but high maintenance build.",
+  "icon": "minecraft:glass_bottle",
+  "impact": 3
+}

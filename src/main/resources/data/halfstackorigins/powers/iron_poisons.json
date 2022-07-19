@@ -1,0 +1,26 @@
+{
+  "hidden": true,
+  "type": "origins:self_action_when_hit",
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:poison",
+      "amplifier": 1,
+      "duration": 200
+    }
+  },
+  "cooldown": 1,
+  "damage_condition": {
+    "type": "origins:attacker",
+    "entity_condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:iron"
+        }
+      }
+    }
+  }
+}

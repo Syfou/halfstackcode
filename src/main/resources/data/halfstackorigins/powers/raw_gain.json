@@ -1,0 +1,26 @@
+{
+  "hidden": true,
+  "type": "origins:modify_food",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "tag": "halfstackorigins:raw_meat"
+    }
+  },
+  "food_modifiers" : [
+    {
+      "operation": "addition",
+      "value": 1
+    },
+    {
+      "operation": "multiply_total",
+      "value": 1
+    }
+  ],
+  "saturation_modifiers": [
+    {
+      "operation": "multiply_base",
+      "value": 3
+    }
+  ]
+}
