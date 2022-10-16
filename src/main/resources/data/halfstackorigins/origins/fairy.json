@@ -1,8 +1,9 @@
 {
   "powers": [
     "halfstackorigins:creative_flight",
-    "halfstackorigins:half_block_size",
-    "halfstackorigins:xp_storing",
+    "halfstackorigins:1_0_block_height",
+    "halfstackorigins:xp_on_hit",
+    "halfstackorigins:levitate",
     "halfstackorigins:fairy_attributes",
     "halfstackorigins:fairy_diet",
     "halfstackorigins:fairy_armor",
@@ -12,9 +13,10 @@
     "halfstackorigins:prevent_elytra",
     "halfstackorigins:shorter_than_2",
     "halfstackorigins:rides_ravagers",
-    "halfstackorigins:rides_goats"
+    "halfstackorigins:rides_goats",
+    "halfstackorigins:ride_chickens"
   ],
   "name": "Fairy",
   "description": "Small insect-like creatures who prefer small spaces and safety in numbers. May be suited for players that prefer building above other activities.",
-  "icon": "minecraft:elytra"
+  "icon": "minecraft:experience_bottle"
 }

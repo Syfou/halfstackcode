@@ -6,10 +6,7 @@
     "type": "origins:and",
     "conditions": [
       {
-        "type": "origins:ingredient",
-        "ingredient": {
-          "tag": "halfstackorigins:realfood"
-        }
+        "type": "origins:food"
       },
       {
         "type": "origins:ingredient",

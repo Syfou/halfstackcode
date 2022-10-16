@@ -10,6 +10,5 @@
     "type": "origins:gain_air",
     "value": 80
   },
-  "name": "MAN-EATER",
-  "description": "You can only eat dry kelp, meat, rotten flesh, eggs, or sugar. Uncooked meat is more effective."
+  "hidden": "true"
 }

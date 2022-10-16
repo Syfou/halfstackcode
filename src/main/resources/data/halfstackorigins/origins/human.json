@@ -1,9 +1,10 @@
 {
   "powers": [
     "halfstackorigins:15_to_25",
-    "halfstackorigins:rides_ravagers"
+    "halfstackorigins:rides_ravagers",
+    "halfstackorigins:2_block_height"
   ],
   "name": "Human",
   "description": "just a guy lmao",
-  "icon": "minecraft:diamond"
+  "icon": "minecraft:diamond_sword"
 }

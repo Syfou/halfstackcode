@@ -9,7 +9,8 @@
     "halfstackorigins:no_ranged",
     "halfstackorigins:prevent_elytra",
     "halfstackorigins:rides_ravagers",
-    "halfstackorigins:loong_diet"
+    "halfstackorigins:loong_diet",
+    "halfstackorigins:2_block_height"
   ],
   "icon": "minecraft:ender_eye",
   "order": 4,

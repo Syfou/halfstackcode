@@ -1,0 +1,67 @@
+{
+  "name": "SMALL MEALS",
+  "description": "You eat chicken, raw fish, slime, spider eyes, tadpoles, and magma cream.",
+  "type": "origins:prevent_item_use",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:realfood"
+        }
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:alwayseat"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:cooked_chicken"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:chicken"
+        },
+        "inverted": true
+      },
+      {
+
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:spider_eye"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:tadpole_bucket"
+        },
+        "inverted": true
+      },{
+
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:fish"
+        },
+        "inverted": true
+      },
+      {
+
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:goo"
+        },
+        "inverted": true
+      }
+    ]
+  }
+}

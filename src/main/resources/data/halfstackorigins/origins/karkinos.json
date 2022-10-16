@@ -1,7 +1,7 @@
 {
   "powers": [
     "halfstackorigins:climbing",
-    "halfstackorigins:half_block_size",
+    "halfstackorigins:1_0_block_height",
     "halfstackorigins:no_riding",
     "halfstackorigins:7_hearts",
     "halfstackorigins:no_sneak",
@@ -18,6 +18,6 @@
     "halfstackorigins:mine_underwater"
   ],
   "name": "Karkinos",
-  "icon": "minecraft:seagrass",
+  "icon": "minecraft:nautilus_shell",
   "description": "A semi-aquatic creature with a hardy shell and clumsy hands. Good for those that don’t prefer armor, or want aquatic exploration."
 }

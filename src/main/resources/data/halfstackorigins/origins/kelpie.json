@@ -1,6 +1,7 @@
 {
   "powers": [
     "halfstackorigins:kelpie_breathing",
+    "halfstackorigins:kelpie_breathing_name",
     "halfstackorigins:3_block_height",
     "halfstackorigins:raw_gain",
     "halfstackorigins:dont_cook",
@@ -21,6 +22,6 @@
   ],
   "name": "KELPIE",
   "description": "An aquatic shapeshifter that often appears as a horse. A strong hitting but high maintenance build.",
-  "icon": "minecraft:glass_bottle",
+  "icon": "minecraft:leather_horse_armor",
   "impact": 3
 }

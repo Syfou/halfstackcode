@@ -5,7 +5,7 @@
     "operation": "addition",
     "value": 20
   },
-  "tick_rate": 20,
+  "tick_rate": 1,
   "condition": {
     "type": "origins:submerged_in",
     "fluid": "minecraft:water"

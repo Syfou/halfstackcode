@@ -9,7 +9,7 @@
       },
       {
         "type": "origins:execute_command",
-        "command": "/scale persist set true @s"
+        "command": "scale persist set true @s"
       }
     ]
   },
@@ -22,7 +22,7 @@
       },
       {
         "type": "origins:execute_command",
-        "command": "/scale persist set true @s"
+        "command": "scale persist set true @s"
       }
     ]
   },

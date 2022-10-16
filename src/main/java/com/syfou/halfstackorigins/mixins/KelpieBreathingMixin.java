@@ -53,7 +53,8 @@ public final class KelpieBreathingMixin {
         @Shadow
         protected boolean isSubmergedInWater;
 
-        @Shadow public abstract boolean isSwimming();
+        @Shadow
+        public abstract boolean isSwimming();
 
         protected UpdateAir(EntityType<? extends LivingEntity> entityType, World world) {
             super(entityType, world);
@@ -61,11 +62,6 @@ public final class KelpieBreathingMixin {
 
         @Inject(at = @At("TAIL"), method = "tick")
         private void tick(CallbackInfo info) {
-//            System.out.println("sprint, isSubmerged, hasVehicle, isIn");
-//            System.out.println(this.isSprinting());
-//            System.out.println(this.isSubmergedInWater());
-//            System.out.println(!this.hasVehicle());
-//            System.out.println(this.world.getFluidState(this.getBlockPos()).isIn(FluidTags.WATER));
             if (HalfstackPowerTypes.KELPIE_BREATHING.isActive(this)) {
                 if (!this.isSubmergedIn(FluidTags.WATER) && !this.hasStatusEffect(StatusEffects.WATER_BREATHING) && !this.hasStatusEffect(StatusEffects.CONDUIT_POWER)) {
                     if (!((EntityAccessor) this).callIsBeingRainedOn()) {
@@ -101,27 +97,22 @@ public final class KelpieBreathingMixin {
             }
         }
 
+//
+//        @Inject(method = "updateWaterSubmersionState()Z", at = @At("RETURN"), cancellable = true)
+//        private void injected(CallbackInfoReturnable<Boolean> inv) {
+//            if (HalfstackPowerTypes.KELPIE_BREATHING.isActive(this)) {
+//                this.isSubmergedInWater = !this.isSubmergedIn(FluidTags.WATER);
+//                inv.setReturnValue(!this.isSubmergedIn(FluidTags.WATER));
+//            } else {
+//                this.isSubmergedInWater = this.isSubmergedIn(FluidTags.WATER);
+//                inv.setReturnValue(this.isSubmergedIn(FluidTags.WATER));
+//            }
+//        }
 
-        @Inject(method = "updateWaterSubmersionState()Z", at = @At("RETURN"), cancellable = true)
-        private void injected(CallbackInfoReturnable<Boolean> inv) {
-            if (HalfstackPowerTypes.KELPIE_BREATHING.isActive(this)) {
-                this.isSubmergedInWater = !this.isSubmergedIn(FluidTags.WATER);
-                inv.setReturnValue(!this.isSubmergedIn(FluidTags.WATER));
-            } else {
-                this.isSubmergedInWater = this.isSubmergedIn(FluidTags.WATER);
-                inv.setReturnValue(this.isSubmergedIn(FluidTags.WATER));
-            }
-        }
-
-        @Inject(method = "updateSwimming", at = @At("HEAD"), cancellable = true)
-        private void injected(CallbackInfo ci) {
-            if (HalfstackPowerTypes.KELPIE_BREATHING.isActive(this)) {
-                if (this.isSwimming()) {
-                    this.setSwimming(this.isTouchingWater() && !this.hasVehicle() && !this.isSneaking());
-                } else {
-                    this.setSwimming(!this.hasVehicle() && this.world.getFluidState(this.getBlockPos()).isIn(FluidTags.WATER) && !this.isSneaking());
-                }
-                ci.cancel();
+        @Inject(method = "isUsingSpyglass", at = @At("HEAD"), cancellable = true)
+        private void cancelSpyglass(CallbackInfoReturnable<Boolean> cir) {
+            if (HalfstackPowerTypes.TAOTIE_BITE.isActive(this)) {
+                cir.setReturnValue(false);
             }
         }
     }

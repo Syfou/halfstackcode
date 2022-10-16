@@ -1,0 +1,104 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:copper_ingot"
+    },
+    "title": {
+      "text": "His spirit lives on...",
+      "color": "green"
+    },
+    "description": {
+      "text": "name a piglin ea-nasir"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "adventure/trade",
+  "criteria": {
+    "named_entity_ea_nasir1": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions":
+        {
+          "entity": {
+            "nbt": "{CustomName:'{\"text\":\"ea_nasir\"}'}"
+          }
+        }
+    },
+    "named_entity_ea_nasir2": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions":
+      {
+        "entity": {
+          "nbt": "{CustomName:'{\"text\":\"ea nasir\"}'}"
+        }
+      }
+    },
+    "named_entity_ea_nasir3": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions":
+      {
+        "entity": {
+          "nbt": "{CustomName:'{\"text\":\"Ea Nasir\"}'}"
+        }
+      }
+    },
+    "named_entity_ea_nasir4": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions":
+      {
+        "entity": {
+          "nbt": "{CustomName:'{\"text\":\"ea-nasir\"}'}"
+        }
+      }
+    },
+    "named_entity_ea_nasir5": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions":
+      {
+        "entity": {
+          "nbt": "{CustomName:'{\"text\":\"Ea-Nasir\"}'}"
+        }
+      }
+    },
+    "named_entity_ea_nasir6": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions":
+      {
+        "entity": {
+          "nbt": "{CustomName:'{\"text\":\"Ea nasir\"}'}"
+        }
+      }
+    },
+    "named_entity_ea_nasir7": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions":
+      {
+        "entity": {
+          "nbt": "{CustomName:'{\"text\":\"Ea-nasir\"}'}"
+        }
+      }
+    },
+    "is_piglin": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:piglin"
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["named_entity_ea_nasir1", "is_piglin"],
+    ["named_entity_ea_nasir2", "is_piglin"],
+    ["named_entity_ea_nasir3", "is_piglin"],
+    ["named_entity_ea_nasir4", "is_piglin"],
+    ["named_entity_ea_nasir5", "is_piglin"],
+    ["named_entity_ea_nasir6", "is_piglin"],
+    ["named_entity_ea_nasir7", "is_piglin"]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

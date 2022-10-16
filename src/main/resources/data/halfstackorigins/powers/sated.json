@@ -1,0 +1,12 @@
+{
+  "type": "origins:modify_damage_dealt",
+  "condition": {
+    "type": "origins:food_level",
+    "comparison": ">=",
+    "compare_to": 17
+  },
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "value": -0.25
+  }
+}

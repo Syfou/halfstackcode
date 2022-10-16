@@ -1,0 +1,9 @@
+{
+  "name": "WATER CLIMBER",
+  "description": "You have speed in water and take increased fire damage. You take damage when dehydrated.",
+  "type": "origins:modify_swim_speed",
+  "modifier": {
+    "operation": "multiply_base",
+    "value": 3
+  }
+}

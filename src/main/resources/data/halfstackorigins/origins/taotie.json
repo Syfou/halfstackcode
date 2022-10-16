@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "halfstackorigins:taotie_bite",
+    "halfstackorigins:taotie_diet",
+    "halfstackorigins:food_on_hit",
+    "halfstackorigins:2_5_height",
+    "halfstackorigins:totem_death"
+  ],
+  "icon": "minecraft:bowl",
+  "name": "Taotie",
+  "description": "A simple minded being with bottomless hunger. For those who prefer a balanced diet."
+}

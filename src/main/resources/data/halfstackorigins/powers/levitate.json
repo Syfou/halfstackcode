@@ -1,0 +1,27 @@
+{
+  "name": "PIXIE DUST",
+  "description": "If you use your ability key while perched on a mob or player, the entity will float until you dismount, or for a maximum of ten seconds. (You must wait ten seconds to use this ability again.)",
+  "type": "origins:active_self",
+  "condition": {
+    "type": "origins:riding"
+  },
+  "entity_action": {
+    "type": "origins:riding_action",
+    "action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:levitation",
+        "duration": 200,
+        "amplifier": 1
+      }
+    }
+  },
+  "cooldown": 250,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+    "bar_index": 24,
+    "condition": {
+      "type": "origins:riding"
+    }
+  }
+}

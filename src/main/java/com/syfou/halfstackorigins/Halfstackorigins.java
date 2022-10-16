@@ -4,6 +4,7 @@ package com.syfou.halfstackorigins;
 import com.syfou.halfstackorigins.entities.fairyflossentity;
 import com.syfou.halfstackorigins.items.fairy_floss;
 import com.syfou.halfstackorigins.items.loong_pearl;
+import com.syfou.halfstackorigins.items.testcrossbow;
 import io.github.apace100.origins.Origins;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
@@ -28,6 +29,7 @@ public class Halfstackorigins implements ModInitializer {
 
     public static final Item LOONG_PEARL = new loong_pearl(new FabricItemSettings().group(ItemGroup.MISC));
     public static final Item FAIRY_FLOSS = new fairy_floss(new FabricItemSettings().group(ItemGroup.MISC));
+    public static final Item TESTCROSSBOW = new testcrossbow(new FabricItemSettings().group(ItemGroup.COMBAT));
     public static final EntityType<fairyflossentity> fairyflossentityEntityType = Registry.register(
             Registry.ENTITY_TYPE,
             new Identifier(MOD_ID,"fairy_floss_entity"),
@@ -45,6 +47,7 @@ public class Halfstackorigins implements ModInitializer {
 
         Registry.register(Registry.ITEM, new Identifier("halfstackorigins", "loong_pearl"), LOONG_PEARL);
         Registry.register(Registry.ITEM, new Identifier("halfstackorigins", "fairy_floss"), FAIRY_FLOSS);
+        Registry.register(Registry.ITEM, new Identifier("halfstackorigins","testcrossbow"), TESTCROSSBOW);
 
     }
     public static Identifier identifier(String path) {

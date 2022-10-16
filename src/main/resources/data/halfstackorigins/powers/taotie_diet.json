@@ -1,0 +1,25 @@
+{
+  "type": "origins:modify_food",
+  "food_modifiers": [
+    {
+      "operation": "multiply_base",
+      "value": -1
+    },
+    {
+      "operation": "addition",
+      "value": 2
+    }
+  ],
+  "saturation_modifiers": [
+    {
+    "operation": "multiply_base",
+    "value": -1
+  },
+    {
+      "operation": "addition",
+      "value": 1
+    }
+    ],
+  "hidden": true,
+  "always_edible": true
+}

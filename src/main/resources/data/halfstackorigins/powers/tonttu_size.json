@@ -7,11 +7,15 @@
     "actions": [
       {
         "type": "origins:execute_command",
-        "command": "scale persist set pehkui:height 0.5 @s"
+        "command": "scale set pehkui:height 0.5 @s"
       },
       {
         "type": "origins:execute_command",
-        "command": "scale persist set pehkui:width 0.5 @s"
+        "command": "scale set pehkui:width 0.5 @s"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale persist set true @s"
       }
       ]
   },
@@ -20,18 +24,22 @@
     "actions": [
       {
         "type": "origins:execute_command",
-        "command": "scale persist set pehkui:height 0.5 @s"
+        "command": "scale set pehkui:height 0.5 @s"
       },
       {
         "type": "origins:execute_command",
-        "command": "scale persist set pehkui:width 0.5 @s"
+        "command": "scale set pehkui:width 0.5 @s"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale persist set true @s"
       }
     ]
   },
 
   "entity_action_lost": {
         "type": "origins:execute_command",
-        "command": "scale reset pehkui:height @s"
+        "command": "scale reset @s"
   },
   "hidden": true
 }

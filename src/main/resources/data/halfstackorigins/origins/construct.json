@@ -1,0 +1,11 @@
+{
+  "name": "Construct",
+  "description": "An artificial being made from strange materials. For players who don’t want to worry about food and don’t mind a little off-camera grinding.",
+  "icon": "minecraft:iron_ingot",
+  "powers": [
+    "halfstackorigins:drown_immunity",
+    "halfstackorigins:starve_immunity",
+    "halfstackorigins:construct_diet",
+    "halfstackorigins:gapple_netherite"
+  ]
+}

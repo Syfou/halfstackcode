@@ -1,6 +1,4 @@
 {
-  "name": "LEAPER",
-  "description": "You can jump 4 blocks and don’t take fall damage.",
   "type": "origins:modify_jump",
   "modifier": {
     "operation": "addition",

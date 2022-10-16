@@ -1,0 +1,9 @@
+{
+  "name": "JUMP GOOD",
+  "description": "You cannot sprint, but you jump 4 blocks high, and bounce instead of taking fall damage. Once a minute, you can jump eight blocks at the cost of hunger. You can climb any solid block.",
+  "type": "origins:modify_jump",
+  "modifier": {
+    "operation": "addition",
+    "value": 0.8
+  }
+}

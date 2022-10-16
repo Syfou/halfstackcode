@@ -1,0 +1,87 @@
+{
+  "display": {
+    "icon": {
+      "item": "origins:orb_of_origin"
+    },
+    "title": "Transmigration",
+    "description": "Have transed into every origin",
+    "announce_to_chat": true,
+    "frame": "challenge",
+    "show_toast": true
+  },
+  "criteria": {
+    "chose_taotie": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "halfstackorigins:taotie"
+      }
+    },
+    "chose_anuran": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "halfstackorigins:anuran"
+      }
+    },
+    "chose_fairy": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "halfstackorigins:fairy"
+      }
+    },
+    "chose_human": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "halfstackorigins:human"
+      }
+    },
+    "chose_karkinos": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "halfstackorigins:karkinos"
+      }
+    },
+    "chose_kelpie": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "halfstackorigins:kelpie"
+      }
+    },    "chose_loong": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "halfstackorigins:loong"
+      }
+    },    "chose_qilin": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "halfstackorigins:qilin"
+      }
+    },
+    "chose_tonttu": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "halfstackorigins:tonttu"
+      }
+    },
+    "chose_wulver": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "halfstackorigins:wulver"
+      }
+    }
+  },
+  "requirements": [
+     ["chose_taotie"],
+     ["chose_wulver"],
+     ["chose_anuran"],
+     ["chose_fairy"],
+     ["chose_human"],
+     ["chose_karkinos"],
+     ["chose_kelpie"],
+     ["chose_loong"],
+     ["chose_qilin"],
+     ["chose_tonttu"]
+  ],
+  "reward": {
+    "experience": 1000
+  }
+}

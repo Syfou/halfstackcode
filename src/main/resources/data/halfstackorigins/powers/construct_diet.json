@@ -1,10 +1,15 @@
 {
+  "name": "MATERIALISTIC",
+  "description": "You have cannot starve or drown. You can eat leather, plain stone or cobble, iron, gold, copper, amethyst shards, and diamond. Netherite will be like enchanted apples for you.",
   "type": "origins:prevent_item_use",
   "item_condition": {
     "type": "origins:and",
     "conditions": [
       {
-        "type": "origins:food"
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "halfstackorigins:realfood"
+        }
       },
       {
         "type": "origins:ingredient",
@@ -16,11 +21,10 @@
       {
         "type": "origins:ingredient",
         "ingredient": {
-          "tag": "halfstackorigins:"
+          "item": "minecraft:leather"
         },
         "inverted": true
       }
     ]
-  },
-  "@that really good programmer over there": "put this power into origin :]"
+  }
 }

@@ -13,7 +13,7 @@
     "halfstackorigins:climbing_desc",
     "halfstackorigins:rides_ravagers"
   ],
-  "icon": "minecraft:red_wool",
+  "icon": "minecraft:fern",
   "name": "Tonttu",
   "description": "A small, speedy, flightless creature. Suited for caving and surprisingly useful for combat."
 }

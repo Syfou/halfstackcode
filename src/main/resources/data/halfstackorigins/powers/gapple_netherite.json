@@ -1,0 +1,34 @@
+{
+  "type": "origins:modify_food",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effects": [
+      {
+        "effect": "minecraft:regeneration",
+        "duration": 600,
+        "amplifier": 2
+      },
+      {
+        "effect": "minecraft:absorption",
+        "duration": 2400,
+        "amplifier": 4
+      },
+      {
+        "effect": "minecraft:fire_resistance",
+        "duration": 6000,
+        "amplifier": 1
+      },
+      {
+        "effect": "minecraft:resistance",
+        "duration": 6000,
+        "amplifier": 1
+      }
+    ]
+  }
+}

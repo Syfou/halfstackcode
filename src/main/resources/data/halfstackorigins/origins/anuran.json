@@ -1,0 +1,20 @@
+{
+  "powers": [
+    "halfstackorigins:1_0_block_height",
+    "halfstackorigins:extra_fire_damamge",
+    "halfstackorigins:anuran_4_block_jump",
+    "halfstackorigins:no_sprint",
+    "halfstackorigins:anuran_water_speed",
+    "halfstackorigins:climbing",
+    "halfstackorigins:anuran_jump",
+    "origins:fall_immunity",
+    "halfstackorigins:bounce",
+    "halfstackorigins:kelpie_breathing",
+    "halfstackorigins:anuran_diet",
+    "halfstackorigins:5_hearts"
+
+  ],
+  "name": "Anuran",
+  "description": "A semi-aquatic egg laying animal of action. For players who want to jump good.",
+  "icon": "minecraft:verdant_froglight"
+}

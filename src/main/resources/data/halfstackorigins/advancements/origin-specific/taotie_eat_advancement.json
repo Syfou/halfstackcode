@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:carrot"
+    },
+    "title": "carrot",
+    "description": "carrot (taotie)",
+    "announce_to_chat": true,
+    "frame": "task",
+    "show_toast": true
+  },
+  "parent": "halfstackorigins:origin-specific/root",
+
+  "criteria": {
+    "is_taotie": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

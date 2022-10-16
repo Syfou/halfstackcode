@@ -1,0 +1,205 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:dandelion"
+    },
+    "title": "Ambrosia",
+    "description": "Eat every flower",
+    "announce_to_chat": true,
+    "frame": "goal",
+    "show_toast": true
+  },
+  "parent": "minecraft:husbandry/plant_seed",
+
+  "criteria": {
+    "dandelion": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:dandelion"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "poppy": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:poppy"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "blue_orchid": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:blue_orchid"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "allium": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:allium"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "azure_bluet": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:azure_bluet"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "red_tulip": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:red_tulip"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "orange_tulip": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:orange_tulip"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "white_tulip": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:white_tulip"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "pink_tulip": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:pink_tulip"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "oxeye_daisy": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:oxeye_daisy"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "cornflower": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:cornflower"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "lily": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:lily_of_the_valley"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "sunflower": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:sunflower"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "lilac": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:lilac"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "rose_bush": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:rose_bush"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "peony": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:peony"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "spore_blossom": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:spore_blossom"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "requirements": [
+    ["dandelion"],
+    ["poppy"],
+    ["blue_orchid"],
+    ["allium"],
+    ["azure_bluet"],
+    ["red_tulip"],
+    ["orange_tulip"],
+    ["white_tulip"],
+    ["pink_tulip"],
+    ["oxeye_daisy"],
+    ["cornflower"],
+    ["lily"],
+    ["sunflower"],
+    ["lilac"],
+    ["rose_bush"],
+    ["peony"],
+    ["spore_blossom"]
+  ]
+}

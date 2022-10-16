@@ -9,7 +9,11 @@
       },
       {
         "type": "origins:execute_command",
-        "command": "/scale persist set true @s"
+        "command": "scale set pehkui:step_height 1.5 @s"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale persist set true @s"
       }
       ]
   },
@@ -22,7 +26,11 @@
       },
       {
         "type": "origins:execute_command",
-        "command": "/scale persist set true @s"
+        "command": "scale set pehkui:step_height 1.5 @s"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale persist set true @s"
       }
     ]  },
   "entity_action_lost": {

@@ -125,6 +125,17 @@
     "minecraft:wheat",
     "minecraft:sugar",
     "minecraft:sea_pickle",
-    "minecraft:tadpole_bucket"
+    "minecraft:tadpole_bucket",
+    "minecraft:cobblestone",
+    "minecraft:stone",
+    "minecraft:iron_ingot",
+    "minecraft:iron_nugget",
+    "minecraft:gold_ingot",
+    "minecraft:gold_nugget",
+    "minecraft:copper_ingot",
+    "minecraft:amethyst_shard",
+    "minecraft:diamond",
+    "minecraft:netherite_ingot"
+
   ]
 }

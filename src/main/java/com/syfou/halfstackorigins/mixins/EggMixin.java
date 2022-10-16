@@ -24,7 +24,7 @@ public abstract class EggMixin extends Item{
     @Inject(method = "use", at = @At("HEAD"), cancellable = true)
     private void tick (World world, PlayerEntity user, Hand hand, CallbackInfoReturnable<TypedActionResult<ItemStack>> cir) {
         ItemStack itemStack = user.getStackInHand(hand);
-        if(HalfstackPowerTypes.EATS_EGGS.isActive(user) ) {
+        if(HalfstackPowerTypes.EATS_EGGS.isActive(user) || HalfstackPowerTypes.TAOTIE_BITE.isActive(user) ) {
             if (user.getHungerManager().isNotFull()) {
                 super.use(world, user, hand);
                 cir.setReturnValue(TypedActionResult.success(itemStack, world.isClient()));

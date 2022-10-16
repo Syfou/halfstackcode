@@ -1,0 +1,5 @@
+{
+  "type": "origins:simple",
+  "name": "BITE",
+  "description": "Attacking mobs/players in melee will fill your hunger equal to the amount of damage you dealt them."
+}

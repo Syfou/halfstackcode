@@ -21,6 +21,9 @@ public class HalfstackPowerTypes {
     public static final PowerType<?> EATS_EGGS = new PowerTypeReference<>(new Identifier("halfstackorigins","eats_eggs"));
     public static final PowerType<?> DROWN = new PowerTypeReference<>(new Identifier("halfstackorigins","drown"));
     public static final PowerType<?> TAOTIE_BITE = new PowerTypeReference<>(new Identifier("halfstackorigins","taotie_bite"));
+    public static final PowerType<?> FOOD_ON_HIT = new PowerTypeReference<>(new Identifier("halfstackorigins","food_on_hit"));
+    public static final PowerType<?> BOUNCE = new PowerTypeReference<>(new Identifier("halfstackorigins","bounce"));
+    public static final PowerType<?> XP_HIT = new PowerTypeReference<>(new Identifier("halfstackorigins","xp_on_hit"));
 
 
 }

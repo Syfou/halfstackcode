@@ -1,7 +1,18 @@
 {
-  "type": "origins:active_self",
-  "key": "origins:key.sneak",
-  "entity_action": {
-
-  }
+  "type": "origins:simple",
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:sneaking"
+      },
+      {
+        "type": "origins:food_level",
+        "comparison": "<",
+        "compare_to": 20
+      }
+    ]
+  },
+  "name": "UNHOLY HUNGER",
+  "description": "By crouching, you can eat any item (except lily pads because it crashes the game), but all items fill your hunger bar by a value of 1. Eating a totem of undying will kill you instantly."
 }

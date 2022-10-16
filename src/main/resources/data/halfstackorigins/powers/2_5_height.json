@@ -5,11 +5,11 @@
     "actions": [
       {
         "type": "origins:execute_command",
-        "command": "scale set pehkui:base 0.5 @s"
+        "command": "scale set pehkui:base 1.25 @s"
       },
       {
         "type": "origins:execute_command",
-        "command": "/scale persist set true @s"
+        "command": "scale persist set true @s"
       }
     ]
   },
@@ -18,17 +18,17 @@
     "actions": [
       {
         "type": "origins:execute_command",
-        "command": "scale set pehkui:base 0.5 @s"
+        "command": "scale set pehkui:base 1.25 @s"
       },
       {
         "type": "origins:execute_command",
-        "command": "/scale persist set true @s"
+        "command": "scale persist set true @s"
       }
     ]
   },
   "entity_action_lost": {
     "type": "origins:execute_command",
-    "command": "scale reset pehkui:base @s"
+    "command": "scale persist reset pehkui:base @s"
   },
   "hidden": true
 }
