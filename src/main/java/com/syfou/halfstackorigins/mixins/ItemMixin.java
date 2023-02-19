@@ -1,5 +1,7 @@
 package com.syfou.halfstackorigins.mixins;
 
+import com.google.gson.JsonObject;
+import com.syfou.halfstackorigins.Halfstackorigins;
 import com.syfou.halfstackorigins.power.HalfstackPowerTypes;
 import net.minecraft.block.Block;
 import net.minecraft.entity.LivingEntity;
@@ -7,6 +9,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
@@ -43,7 +46,7 @@ public abstract class ItemMixin {
     private static final List<String> inediblePlants = Arrays.asList(inediblePlantsArray);
     private static final String[] edibleClassesArray = new String[]{"net.minecraft.block.TallFlowerBlock", "net.minecraft.block.SporeBlossomBlock", "net.minecraft.block.HayBlock", "net.minecraft.block.KelpBlock", "net.minecraft.block.GlowLichenBlock", "net.minecraft.block.HangingRootsBlock", "net.minecraft.block.BambooBlock", "net.minecraft.block.LeavesBlock", "net.minecraft.block.MossBlock", "net.minecraft.block.CocoaBlock", "net.minecraft.block.BeetrootsBlock", "net.minecraft.block.TurtleEggBlock", "net.minecraft.block.PropaguleBlock", "net.minecraft.block.SlimeBlock", "net.minecraft.block.MagmaBlock"};
     private static final List<String> edibleClasses = Arrays.asList(edibleClassesArray);
-    private static final String[] edibleItemsArray = new String[]{"Egg", "Honeycomb", "Blue Orchid", "Glistering Melon Slice", "Dandelion", "Milk Bucket", "Wheat", "Clay Ball", "Sea Pickle", "Bone", "Sugar", "Bucket of Tadpole", "Slimeball", "Magma Cream", "Leather","Cobblestone","Stone","Iron Nugget","Iron Ingot",""};
+    private static final String[] edibleItemsArray = new String[]{"Egg", "Honeycomb", "Blue Orchid", "Glistering Melon Slice", "Dandelion", "Milk Bucket", "Wheat", "Clay Ball", "Sea Pickle", "Bone", "Sugar", "Bucket of Tadpole", "Slimeball", "Magma Cream", "Leather","Cobblestone","Stone","Iron Nugget","Iron Ingot","Stone Slab","Stone Stairs", "Cobblestone Slab", "Cobblestone Stairs", "Gold Ingot","Gold Nugget","Copper Ingot","Diamond","Netherite Ingot", "Amethyst Shard","Small Amethyst Bud","Medium Amethyst Bud","Large Amethyst Bud","Amethyst Cluster"};
     private static final List<String> edibleItems = Arrays.asList(edibleItemsArray);
     private static final String[] oneArray = new String[]{"net.minecraft.block.CropBlock", "net.minecraft.block.CocoaBlock", "net.minecraft.block.StemBlock", "net.minecraft.block.BambooBlock", "net.minecraft.block.HangingRootsBlock", "net.minecraft.block.BambooBlock", "net.minecraft.block.DeadBushBlock", "net.minecraft.block.SproutsBlock", "net.minecraft.block.BeetrootsBlock"};
     private static final List<String> one = Arrays.asList(oneArray);
@@ -59,34 +62,37 @@ public abstract class ItemMixin {
     private static final List<String> eight = Arrays.asList(eightArray);
     private static final String[] itemsNoneArray = new String[]{"Clay Ball"};
     private static final List<String> itemsNone = Arrays.asList(itemsNoneArray);
-    private static final String[] itemsTwoArray = new String[]{"Egg", "Milk Bucket", "Wheat", "Bone", "Sugar", "Bucket of Tadpole"};
+    private static final String[] itemsOneArray = new String[]{"Cobblestone","Stone","Stone Slab","Stone Stairs", "Cobblestone Slab", "Cobblestone Stairs","Iron Nugget","Gold Nugget"};
+    private static final List<String> itemsOne = Arrays.asList(itemsOneArray);
+    private static final String[] itemsTwoArray = new String[]{"Egg", "Milk Bucket", "Wheat", "Bone", "Sugar", "Bucket of Tadpole", "Leather"};
     private static final List<String> itemsTwo = Arrays.asList(itemsTwoArray);
-    private static final String[] itemsThreeArray = new String[]{"Glistering Melon Slice", "Blue Orchid", "Dandelion", "Sea Pickle"};
+    private static final String[] itemsThreeArray = new String[]{"Glistering Melon Slice", "Blue Orchid", "Dandelion", "Sea Pickle", "Amethyst Shard","Small Amethyst Bud","Medium Amethyst Bud","Large Amethyst Bud","Amethyst Cluster"};
     private static final List<String> itemsThree = Arrays.asList(itemsThreeArray);
-    private static final String[] itemsFiveArray = new String[]{"Magma Cream", "Slimeball"};
+    private static final String[] itemsFiveArray = new String[]{"Magma Cream", "Slimeball","Iron Ingot", "Gold Ingot","Copper Ingot"};
     private static final List<String> itemsFive = Arrays.asList(itemsFiveArray);
-    private static final String[] itemsSixArray = new String[]{"Honeycomb"};
+    private static final String[] itemsSixArray = new String[]{"Honeycomb","Diamond"};
     private static final List<String> itemsSix = Arrays.asList(itemsSixArray);
-    private static final String[] itemsEightArray = new String[]{""};
+    private static final String[] itemsEightArray = new String[]{"Netherite Ingot"};
     private static final List<String> itemsEight = Arrays.asList(itemsEightArray);
 
 
     @Inject(method = "isFood", at = @At("HEAD"), cancellable = true)
     private void InsertFood(CallbackInfoReturnable<Boolean> cir) {
+
         if(isTaotieEatingActive && !Objects.equals(this.getName().getString(), "Lily Pad") && !Objects.equals(this.getName().getString(), "Frogspawn")){
             cir.setReturnValue(true);
         } else {
             if (((Item) (Object) this) instanceof BlockItem) {
-                BlockItem item = ((BlockItem) (Object) this);
-                Block block = item.getBlock();
-                if (edibleSuperClasses.contains(block.getClass().getSuperclass().getName()) && !(inediblePlants.contains(block.getClass().getName()))) {
+//                BlockItem item = ((BlockItem) (Object) this);
+//                Block block = item.getBlock();
+                if (edibleSuperClasses.contains(this.getClass().getSuperclass().getName()) && !(inediblePlants.contains(this.getClass().getName()))) {
                     cir.setReturnValue(true);
-                } else if (edibleClasses.contains(block.getClass().getName())) {
+                } else if (edibleClasses.contains(this.getClass().getName())) {
                     cir.setReturnValue(true);
                 }
-            } else if (((Item) (Object) this) instanceof Item) {
-                Item item = ((Item) (Object) this);
-                if (edibleItems.contains(item.getName().getString())) {
+            } if (((Item) (Object) this) instanceof Item) {
+//                Item item = ((Item) (Object) this);
+                if (edibleItems.contains(this.getName().getString())) {
                     cir.setReturnValue(true);
                 }
             }
@@ -101,7 +107,9 @@ public abstract class ItemMixin {
             if (itemsNone.contains(item.getName().getString())) {
                 cir.setReturnValue(component.hunger(0).saturationModifier(0).snack().build());
             }
-            if (itemsTwo.contains(item.getName().getString())) {
+            if(itemsOne.contains(item.getName().getString())){
+                cir.setReturnValue(component.hunger(1).saturationModifier(0).snack().build());
+            } else if (itemsTwo.contains(item.getName().getString())) {
                 cir.setReturnValue(component.hunger(2).saturationModifier(1).snack().build());
             } else if (itemsThree.contains(item.getName().getString())) {
                 cir.setReturnValue(component.hunger(3).saturationModifier(3).build());
@@ -140,6 +148,10 @@ public abstract class ItemMixin {
     }
 
     @Shadow public abstract TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand);
+
+    @Shadow public abstract Text getName(ItemStack stack);
+
+    @Shadow public abstract String getTranslationKey();
 
     public boolean isTaotieEatingActive = false;
 

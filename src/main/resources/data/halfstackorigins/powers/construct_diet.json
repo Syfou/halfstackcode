@@ -21,6 +21,13 @@
       {
         "type": "origins:ingredient",
         "ingredient": {
+          "tag": "halfstackorigins:materials"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
           "item": "minecraft:leather"
         },
         "inverted": true

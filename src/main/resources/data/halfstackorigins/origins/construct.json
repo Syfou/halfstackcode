@@ -6,6 +6,10 @@
     "halfstackorigins:drown_immunity",
     "halfstackorigins:starve_immunity",
     "halfstackorigins:construct_diet",
-    "halfstackorigins:gapple_netherite"
+    "halfstackorigins:gapple_netherite",
+    "halfstackorigins:3_block_height",
+    "halfstackorigins:construct_mining",
+    "halfstackorigins:construct_armor",
+    "halfstackorigins:effect_immunity"
   ]
 }

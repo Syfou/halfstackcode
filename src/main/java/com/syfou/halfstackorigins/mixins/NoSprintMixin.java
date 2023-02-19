@@ -26,7 +26,7 @@ public abstract class NoSprintMixin extends Entity{
     @Inject(method = "setSprinting", at = @At("HEAD"), cancellable = true)
     public void customSprinting(boolean sprinting, CallbackInfo ci){
         if(HalfstackPowerTypes.NO_SPRINT.isActive(this)){
-            super.setSprinting(sprinting);
+            super.setSprinting(false);
             ci.cancel();
         }
     }

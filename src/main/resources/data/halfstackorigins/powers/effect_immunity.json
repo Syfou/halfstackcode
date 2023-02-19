@@ -1,0 +1,9 @@
+{
+  "name": "IMPERMEABLE",
+  "description": "For better or worse, splash potions, lingering potions, and tipped arrows will not work on you, and you cannot be poisoned.",
+  "type": "origins:modify_status_effect_duration",
+  "modifier": {
+    "operation": "set_total",
+    "value": 0
+  }
+}

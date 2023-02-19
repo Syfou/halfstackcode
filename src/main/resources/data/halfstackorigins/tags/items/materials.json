@@ -10,7 +10,14 @@
     "minecraft:copper_ingot",
     "minecraft:amethyst_shard",
     "minecraft:diamond",
-    "minecraft:netherite_ingot"
-
+    "minecraft:netherite_ingot",
+    "minecraft:stone_stairs",
+    "minecraft:stone_slab",
+    "minecraft:cobblestone_slab",
+    "minecraft:cobblestone_slab",
+    "minecraft:small_amethyst_bud",
+    "minecraft:medium_amethyst_bud",
+    "minecraft:large_amethyst_bud",
+    "minecraft:amethyst_cluster"
   ]
 }
